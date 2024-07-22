@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg {
+  background-image: url('./Assets/Img\ 1.png');
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.bg2 {
+  background-image: url('./Assets/Img\ 1.png');
+  background-size: cover;
+  width: 100%;
+  height: 260vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+ 
+}
+.bg3 {
+  background-image: url('./Assets/Img\ 1.png');
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .bg3 {
+    position: relative;
+    height: 300vh; /* Set the height for larger screens, e.g., tablets and above */
+  }
+}
+
+@media (max-width: 767px) {
+  .bg3 {
+position: relative;
+    height: 410vh; /* Set the height for smaller screens, e.g., mobile devices */
+  }
+}
+.bg4 {
+  background-image: url('./Assets/Img%201.png'); /* Adjusted URL with '%20' for space */
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .bg4 {
+    position: relative; /* Ensure relative positioning */
+    height: 100vh; 
+    /* Adjusted height for larger screens */
+  }
+}
+
+@media (max-width: 7680px) {
+  .bg4 {
+
+      position: relative; /* Ensure relative positioning */
+     height: 140vh; /* Set the height for smaller screens, e.g., mobile devices */
+  }
+}
+
+
+.bg5 {
+  background-image: url('./Assets/Img\ 1.png');
+  background-size: cover;
+  width: 100%;
+  height: 150vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  background: rgba(12, 11, 9, 0.6);
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  top: 40px;
+}
+
+#header.header-scrolled {
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #37332a;
+}
+/* App.css */
+/* App.css */
+.footer {
+  text-align: center;
+  padding-top: 20px;
+  text-decoration-color: white;
+  background: rgba(12, 11, 9, 0.6);
+  border-top: 1px solid rgba(12, 11, 9, 0.6);
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 997;
+  position: fixed; /* Change to fixed */
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Weather.css */
+/* Weather.css */
+
+.bg4 {
+  padding-top: 70px; /* Adjust the value as needed */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+}
+.search-input {
+  padding: 10px;
+  font-size: 1em;
+  width: 300px; /* Adjust the width as needed */
+  border: 2px solid #3498db;
+  border-radius: 9px 9px 9px 9px;
+  margin-right: 15px; 
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px 9px 9px 9px;
+}
+
+.weather-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-details p {
+  flex-basis: calc(33.33% - 10px); /* Adjust the value as needed */
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+
+
